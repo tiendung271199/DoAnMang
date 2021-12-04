@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//src/main/resources/messages/error.properties=UTF-8
+encoding//src/main/resources/messages/success.properties=UTF-8
+encoding//src/main/resources/messages/validator.properties=UTF-8
+encoding//src/main/webapp/WEB-INF/views/demo.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/views/public/detail.jsp=UTF-8
+encoding/<project>=UTF-8

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+<tiles-definitions>  
+   <definition name="admin.template" template="/WEB-INF/views/templates/admin.jsp"> 
+       <put-attribute name="header" value="/WEB-INF/views/components/admin/header.jsp" />
+       <put-attribute name="leftbar" value="/WEB-INF/views/components/admin/leftbar.jsp" />
+       <put-attribute name="body" value="" />
+       <put-attribute name="footer" value="/WEB-INF/views/components/admin/footer.jsp" />
+   </definition>
+   
+   <definition name="admin.index" extends="admin.template">
+   		<put-attribute name="body" value="/WEB-INF/views/views/admin/index.jsp" />
+   </definition>
+
+   <!-- post -->
+   <definition name="admin.post.index" extends="admin.template">
+   		<put-attribute name="body" value="/WEB-INF/views/views/admin/post/index.jsp" />
+   </definition>
+
+   <definition name="admin.post.detail" extends="admin.template">
+   		<put-attribute name="body" value="/WEB-INF/views/views/admin/post/detail.jsp" />
+   </definition>
+	
+   <!-- user -->
+   <definition name="admin.user.index" extends="admin.template">
+   		<put-attribute name="body" value="/WEB-INF/views/views/admin/user/index.jsp" />
+   </definition>
+
+   <definition name="admin.user.add" extends="admin.template">
+   		<put-attribute name="body" value="/WEB-INF/views/views/admin/user/add.jsp" />
+   </definition>
+
+   <definition name="admin.user.update" extends="admin.template">
+   		<put-attribute name="body" value="/WEB-INF/views/views/admin/user/update.jsp" />
+   </definition>
+
+   <definition name="admin.user.password" extends="admin.template">
+   		<put-attribute name="body" value="/WEB-INF/views/views/admin/user/change-password.jsp" />
+   </definition>
+   
+   <!-- charity -->
+   <definition name="admin.charity.index" extends="admin.template">
+   		<put-attribute name="body" value="/WEB-INF/views/views/admin/charity/index.jsp" />
+   </definition>
+
+   <!-- reviews -->
+   <definition name="admin.reviews.index" extends="admin.template">
+   		<put-attribute name="body" value="/WEB-INF/views/views/admin/reviews/index.jsp" />
+   </definition>
+
+   <definition name="admin.reviews.detail" extends="admin.template">
+   		<put-attribute name="body" value="/WEB-INF/views/views/admin/reviews/detail.jsp" />
+   </definition>
+</tiles-definitions>

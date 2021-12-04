@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+  <definition name="template.public" template="/WEB-INF/views/templates/public.jsp">
+    <put-attribute name="header" value="/WEB-INF/views/components/public/header.jsp" />
+    <put-attribute name="leftbar" value="/WEB-INF/views/components/public/leftbar.jsp" />
+    <put-attribute name="body" value="" />
+    <put-attribute name="footer" value="/WEB-INF/views/components/public/footer.jsp" />
+  </definition>
+  
+  <definition name="public.index" extends="template.public" >
+    <put-attribute name="body" value="/WEB-INF/views/views/public/index.jsp" />
+  </definition>
+  
+  <definition name="public.detail" extends="template.public" >
+    <put-attribute name="body" value="/WEB-INF/views/views/public/detail.jsp" />
+  </definition>
+
+  <definition name="public.info" extends="template.public" >
+    <put-attribute name="body" value="/WEB-INF/views/views/public/info/info.jsp" />
+  </definition>
+
+  <definition name="public.reviews" extends="template.public" >
+    <put-attribute name="body" value="/WEB-INF/views/views/public/reviews.jsp" />
+  </definition>
+
+  <!-- USER 1 -->
+  <definition name="public.quanlypost" extends="template.public" >
+    <put-attribute name="body" value="/WEB-INF/views/views/public/user1/quaylypost.jsp" />
+  </definition>
+
+  <definition name="public.addpost" extends="template.public" >
+    <put-attribute name="body" value="/WEB-INF/views/views/public/user1/add-post.jsp" />
+  </definition>
+
+  <definition name="public.post.detail" extends="template.public" >
+    <put-attribute name="body" value="/WEB-INF/views/views/public/user1/post-detail.jsp" />
+  </definition>
+
+  <definition name="public.post.update" extends="template.public" >
+    <put-attribute name="body" value="/WEB-INF/views/views/public/user1/post-update.jsp" />
+  </definition>
+  
+  <!-- USER 2 -->
+  <definition name="public.post.register" extends="template.public" >
+    <put-attribute name="body" value="/WEB-INF/views/views/public/user2/post-register.jsp" />
+  </definition>
+  
+  <!-- AUTH -->
+  <definition name="public.login" extends="template.public" >
+    <put-attribute name="body" value="/WEB-INF/views/views/public/auth/login.jsp" />
+  </definition>
+
+  <definition name="public.profile" extends="template.public" >
+    <put-attribute name="body" value="/WEB-INF/views/views/public/auth/profile.jsp" />
+  </definition>
+
+  <definition name="public.profile.password" extends="template.public" >
+    <put-attribute name="body" value="/WEB-INF/views/views/public/auth/change-password.jsp" />
+  </definition>
+
+  <definition name="public.register" extends="template.public" >
+    <put-attribute name="body" value="/WEB-INF/views/views/public/auth/register.jsp" />
+  </definition>
+</tiles-definitions>
